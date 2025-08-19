@@ -15,6 +15,10 @@ const App = () => {
   console.log(now, a+b)
   const nimi = "Pekka"
   const ika = 10
+  const friends = [
+    {name: 'Leevi', age: 4},
+    {name: 'Venla', age: 10},
+  ]
   return (
     <div>
     <h2>Ensin "Hello World" ja aika</h2>
@@ -26,6 +30,10 @@ const App = () => {
         <Hello name={nimi} age={ika}/>
         <Hello name="Maja" age={26 + 10}/>
       </p>
+    <h3>Friends part:</h3>
+     <p>{friends[0].name} is {friends[0].age} years old</p>
+     <p>{friends[1].name} is {friends[1].age} years old</p>
+
     </div>
   )
 }
